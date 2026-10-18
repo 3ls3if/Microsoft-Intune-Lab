@@ -1,0 +1,19 @@
+
+{
+  "Rules": [
+    {
+      "SettingName": "CompanyPortalInstalled",
+      "Operator": "IsEquals",
+      "DataType": "Boolean",
+      "Operand": true,
+      "MoreInfoUrl": "https://learn.microsoft.com/en-us/intune/user-help/company-portal/",
+      "RemediationStrings": [
+        {
+          "Language": "en_US",
+          "Title": "Company Portal is not installed",
+          "Description": "Install the Microsoft Intune Company Portal application on this device to meet the organization's compliance requirements."
+        }
+      ]
+    }
+  ]
+}
