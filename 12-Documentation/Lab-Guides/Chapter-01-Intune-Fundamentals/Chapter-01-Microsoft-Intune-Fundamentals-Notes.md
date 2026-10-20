@@ -354,27 +354,6 @@ The chapter uses the existing repository structure:
         └── Chapter-01-Microsoft-Intune-Fundamentals-Notes.md
 ```
 
-### Commit the Notes
-
-From the repository root:
-
-```bash
-cd ~/Desktop/Intune_Policies
-
-git status
-
-git add \
-  "12-Documentation/Lab-Guides/Chapter-01-Intune-Fundamentals/Chapter-01-Microsoft-Intune-Fundamentals-Notes.md" \
-  "12-Documentation/Lab-Guides/Chapter-01-Intune-Fundamentals/tenant-baseline.md"
-
-git diff --cached
-
-git commit -m "Add Chapter 01 Intune fundamentals study notes"
-
-git push origin main
-```
-
-Review `git diff --cached` before committing. Confirm that the staged files contain no credentials, access tokens, or sensitive tenant data.
 
 ## 13. Chapter Completion Record
 
