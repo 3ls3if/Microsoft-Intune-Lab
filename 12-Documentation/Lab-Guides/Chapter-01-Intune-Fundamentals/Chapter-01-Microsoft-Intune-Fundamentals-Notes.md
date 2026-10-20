@@ -354,23 +354,7 @@ The chapter uses the existing repository structure:
         └── Chapter-01-Microsoft-Intune-Fundamentals-Notes.md
 ```
 
-
-## 13. Chapter Completion Record
-
-| Task | Status |
-|---|---|
-| Read the fundamentals section | Pending |
-| Understand the architecture | Pending |
-| Review licensing and prerequisites | Pending |
-| Complete portal discovery | Pending |
-| Update tenant baseline | Pending |
-| Complete optional Graph lab | Optional |
-| Review security and troubleshooting | Pending |
-| Commit and push documentation | Pending |
-
-Update each status as you complete the task.
-
-## 14. Official References
+## 13. Official References
 
 - [Microsoft Intune documentation](https://learn.microsoft.com/en-us/intune/)
 - [Microsoft Intune licensing](https://learn.microsoft.com/en-us/intune/fundamentals/licensing)
