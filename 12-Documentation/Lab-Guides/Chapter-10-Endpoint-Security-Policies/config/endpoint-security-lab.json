@@ -1,0 +1,58 @@
+{
+  "schemaVersion": "1.0",
+  "chapter": "Chapter 10 - Endpoint Security Policies",
+  "targetPlatform": "Windows 10 and later",
+  "assignmentGroup": "SG-Intune-EndpointSecurity-Lab",
+  "policies": [
+    {
+      "name": "ES-10-WIN-Defender-Antivirus-Lab",
+      "workload": "Antivirus",
+      "purpose": "Configure baseline Defender Antivirus protections",
+      "initialMode": "Controlled lab deployment",
+      "validation": [
+        "Get-MpComputerStatus",
+        "Intune policy device status"
+      ]
+    },
+    {
+      "name": "ES-10-WIN-Firewall-Lab",
+      "workload": "Firewall",
+      "purpose": "Verify firewall protection for supported network profiles",
+      "initialMode": "Enable supported profiles after checking remote access",
+      "validation": [
+        "Get-NetFirewallProfile",
+        "Get-NetFirewallRule"
+      ]
+    },
+    {
+      "name": "ES-10-WIN-BitLocker-Lab",
+      "workload": "Disk encryption",
+      "purpose": "Manage BitLocker settings on supported test devices",
+      "initialMode": "Confirm recovery-key escrow and device readiness first",
+      "validation": [
+        "Get-Tpm",
+        "Get-BitLockerVolume",
+        "Recovery-key escrow verification"
+      ]
+    },
+    {
+      "name": "ES-10-WIN-ASR-Audit-Lab",
+      "workload": "Attack surface reduction",
+      "purpose": "Observe the impact of a selected ASR rule before enforcement",
+      "initialMode": "Audit",
+      "validation": [
+        "Get-MpPreference",
+        "Intune policy status",
+        "Available Defender event and reporting data"
+      ]
+    }
+  ],
+  "safety": {
+    "productionAssignmentsAllowed": false,
+    "automaticWipeAllowed": false,
+    "automaticRetirementAllowed": false,
+    "bitLockerRecoveryKeyMustBeEscrowed": true,
+    "asrBlockModeRequiresPriorTesting": true,
+    "firewallChangesRequireManagementAccessReview": true
+  }
+}
