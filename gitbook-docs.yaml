@@ -1,0 +1,77 @@
+$schema: https://api.gitbook.com/gitbook-docs.yaml
+site:
+  title: Microsoft Intune Lab
+  structure:
+    - type: space
+      key: device-management
+      title: Device Management
+      path: device-management
+      default: true
+      content:
+        directory: ./01-Device-Management
+    - type: space
+      key: compliance-policies
+      title: Compliance Policies
+      path: compliance-policies
+      content:
+        directory: ./02-Compliance-Policies
+    - type: space
+      key: endpoint-security
+      title: Endpoint Security
+      path: endpoint-security
+      content:
+        directory: ./03-Endpoint-Security
+    - type: space
+      key: applications
+      title: Applications
+      path: applications
+      content:
+        directory: ./04-Applications
+    - type: space
+      key: scripts-and-remediations
+      title: Scripts and Remediations
+      path: scripts-and-remediations
+      content:
+        directory: ./05-Scripts-and-Remediations
+    - type: space
+      key: conditional-access
+      title: Conditional Access
+      path: conditional-access
+      content:
+        directory: ./06-Conditional-Access
+    - type: space
+      key: identity-and-enrollment
+      title: Identity and Enrollment
+      path: identity-and-enrollment
+      content:
+        directory: ./07-Identity-and-Enrollment
+    - type: space
+      key: updates-and-patching
+      title: Updates and Patching
+      path: updates-and-patching
+      content:
+        directory: ./08-Updates-and-Patching
+    - type: space
+      key: device-platform-labs
+      title: Device Platform Labs
+      path: device-platform-labs
+      content:
+        directory: ./09-Device-Platform-Labs
+    - type: space
+      key: reports-and-monitoring
+      title: Reports and Monitoring
+      path: reports-and-monitoring
+      content:
+        directory: ./10-Reports-and-Monitoring
+    - type: space
+      key: graph-api-and-automation
+      title: Graph API and Automation
+      path: graph-api-and-automation
+      content:
+        directory: ./11-Graph-API-and-Automation
+    - type: space
+      key: documentation
+      title: Documentation
+      path: documentation
+      content:
+        directory: ./12-Documentation
